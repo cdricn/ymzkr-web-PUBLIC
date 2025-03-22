@@ -1,0 +1,78 @@
+.scrollbar-container {
+  margin: auto;
+  margin-top: 33px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  left: 0;
+  right: 0;
+  width: 380px;
+}
+
+.circles-container {
+  position: relative;
+  display: flex;
+  gap: 30px;
+}
+.circles-container::before {
+  content: '';
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 2px;
+  width: 240px;
+  background-color: var(--color-darkivory);
+}
+
+.circle-container {
+  border-radius: 50%;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.button-container {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.buttonL, .buttonR {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  color: var(--color-dovegrey);
+  transition: .2s;
+}
+.button-container:hover > .buttonL {
+  transform: translateX(-3px);
+  color: var(--color-merlin)
+}
+.button-container:hover > .buttonR {
+  transform: translateX(3px);
+  color: var(--color-merlin)
+}
+
+@media (max-width: 800px) {
+  .scrollbar-container {
+    display: none;
+  }
+}

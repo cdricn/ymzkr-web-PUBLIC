@@ -1,0 +1,34 @@
+.section {
+  position: relative;
+}
+.page-header {
+  margin: auto;
+  margin-bottom: 60px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+.header {
+  color: var(--color-dovegrey);
+  font-family: var(--font-inter);
+  font-size: var(--fs-section-header);
+  font-weight: bold;
+  line-height: 80%;
+  hyphens: auto;
+}
+.subtext {
+  margin: auto;
+  margin-top: 30px;
+  color: var(--color-lightdovegrey);
+  font-family: var(--font-roboto);
+  font-size: var(--fs-body-header);
+  width: clamp(280px, calc(31.25rem + ((1vw - 19.2px) * 13.7845)), 500px);
+}
+
+.content-wrapper {
+  margin: auto;
+  margin-top: clamp(80px, calc(8.125rem + ((1vw - 19.2px) * 3.1328)), 130px);
+  margin-bottom: 300px;
+  position: relative;
+  width: fit-content;
+}

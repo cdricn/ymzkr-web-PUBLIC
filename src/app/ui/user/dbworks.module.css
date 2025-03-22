@@ -1,0 +1,67 @@
+.entries-container {
+  position: relative;
+  overflow-x: auto;
+}
+.item-form, .headers-row {
+  margin-bottom: 2px;
+  padding: 15px 25px 15px 25px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  height: fit-content;
+  width: fit-content;
+  max-width: 1720px;
+  color: var(--color-dark);
+  background-color: var(--background-lightgrey);
+  /*scrollbar-color: var(--background-grey) var(--background-lightgrey);
+  scrollbar-width: thin;*/
+}
+
+.item-form > *, .headers-row > * {
+  width: 200px;
+  min-width: 100px;
+}
+
+.entry-link {
+  word-break: break-all;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.delete-button, .edit-button, .cancel-button {
+  position: relative;
+  display: inline-block;
+  border: none;
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+  transition: .2s;
+  background-color: var(--color-red);
+  cursor: pointer;
+}
+.delete-button {
+  background-color: var(--color-red);
+}
+.edit-button {
+  background-color: var(--color-blue);
+}
+.cancel-button {
+  background-color: var(--color-red);
+}
+
+.button-svg {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  color: var(--color-light);
+  pointer-events: none;
+}

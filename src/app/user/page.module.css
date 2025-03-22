@@ -1,0 +1,34 @@
+.section {
+  position: relative;
+  height: fit-content;
+  overflow: hidden;
+}
+.page-wrapper {
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1620px;
+  max-width: 90%;
+}
+
+.layout-wrapper {
+  position: relative;
+}
+
+.create-form {
+  margin-top: 32px;
+}
+.show-entries {
+  margin-top: 16px;
+}
+
+.section-header {
+  margin-bottom: 1rem;
+  position: relative;
+  color: var(--color-dark);
+  font-size: var(--fs-body-larger);
+  font-family: var(--font-roboto);
+}

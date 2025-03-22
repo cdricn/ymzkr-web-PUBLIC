@@ -1,0 +1,43 @@
+
+
+.site-header {
+  border-bottom: 2px solid var(--color-brown);
+  position: fixed;
+  top: 0;
+  height: 90px;
+  width: 100%;
+  background-color: var(--background-light);
+  z-index: 100;
+  visibility: hidden;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.menu-container {
+  position: relative;
+  margin-top: 7px;
+  margin-right: 7.5rem;
+  display: flex;
+  gap: 58px;
+  color: var(--color-dark);
+  font-family: var(--font-robotoBold);
+  font-size: var(--fs-s);
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.underline {
+  position: relative;
+  top: -.3rem;
+  height: 7px;
+  width: 0%;
+  transition: .3s;
+}
+.menu-item:hover .underline {
+  width: 100%;
+}

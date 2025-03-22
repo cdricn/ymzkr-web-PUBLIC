@@ -1,0 +1,17 @@
+.section {
+  margin-top: 130px;
+  margin-bottom: 300px;
+  position: relative;
+}
+
+.introduction {
+  margin: auto;
+  width: clamp(280px, calc(51.875rem + ((1vw - 19.2px) * 34.4612)), 830px);
+  color: var(--color-grey);
+  font-size: var(--fs-introduction);
+  font-family: var(--font-robotoMedium);
+  line-height: 90%;
+}
+.introduction > span {
+  color: var(--color-dovegrey);
+}

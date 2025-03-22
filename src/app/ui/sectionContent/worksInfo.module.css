@@ -1,0 +1,26 @@
+.page-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.info-title, .info-text {
+  font-size: var(--fs-body);
+  line-height: 90%;
+}
+.info-title {
+  color: var(--color-dovegrey);
+  font-family: var(--font-robotoBold);
+}
+.info-text {
+  color: var(--color-lightdovegrey);
+  font-family: var(--font-roboto);
+  line-height: 120%;
+}
+
+@media (max-width: 800px) {
+  .page-info {
+    gap: 15px;
+  }
+}

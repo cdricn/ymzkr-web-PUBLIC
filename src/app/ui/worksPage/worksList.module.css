@@ -1,0 +1,54 @@
+.showcase-container {
+  position: relative;
+}
+.showcase-item {
+  margin-bottom: 2px;
+  padding: 35px 5px 35px 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  height: fit-content;
+  opacity: 0;
+  background-color: var(--color-darkivory);
+  color: var(--color-merlin);
+  animation: 1s fadeIn forwards;
+  transition: .2s;
+}
+.showcase-item:hover {
+  background-color: var(--color-lightdovegrey);
+  color: var(--color-ivory);
+}
+
+.date-group {
+  width: 80px;
+}
+.showcase-group {
+  width: 240px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scaleInFromLeft {
+  0% {
+    transform: scale(0, 1);
+    transform-origin: left;
+  }
+  100% {
+    transform: scale(1, 1);
+    transform-origin: left;
+  }
+}
+
+@media (width < 700px) {
+  .showcase-item {
+    padding: 25px 5px 25px 5px;
+    font-size: var(--fs-small);
+  }
+}

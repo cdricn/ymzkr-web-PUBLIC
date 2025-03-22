@@ -1,0 +1,28 @@
+.divider {
+  margin: auto;
+  margin-top: clamp(150px, calc(9.375rem + ((1vw - 8px) * -7.3529)), 185px);
+  margin-bottom: clamp(150px, calc(9.375rem + ((1vw - 8px) * -7.3529)), 185px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 2px;
+  width: 15%;
+  min-width: 80px;
+  background-color: var(--color-darkivory);
+}
+
+.circle, .circle-big {
+  border-radius: 10px;
+  position: relative;
+  background-color: var(--color-darkivory);
+}
+.small {
+  width: 8px;
+  height: 8px;
+}
+.big {
+  width: 10px;
+  height: 10px;
+}

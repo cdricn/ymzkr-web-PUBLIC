@@ -1,0 +1,31 @@
+.circle-container {
+  position: absolute;
+  bottom: -230px;
+  right: -230px;
+}
+
+.circle {
+  border: 2px solid var(--color-ivory);
+  border-radius: 50%;
+}
+
+.large {
+  width: clamp(420px, calc(28.75rem + ((1vw - 19.2px) * 2.5063)), 460px);;
+  height: clamp(420px, calc(28.75rem + ((1vw - 19.2px) * 2.5063)), 460px);;
+}
+
+.medium {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: 110px;
+  top: 110px;
+}
+
+.small {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  left: 60px;
+  top: 60px;
+}

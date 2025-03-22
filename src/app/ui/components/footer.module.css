@@ -1,0 +1,38 @@
+.section {
+  position: relative;
+  display: block;
+  height: 270px;
+  background-color: var(--color-merlin);
+}
+
+.content-container {
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 40px;
+}
+
+.footer-header {
+  text-align: center;
+}
+.footer-header > span {
+  font-size: var(--fs-body);
+}
+.footer-header > span:first-child {
+  font-family: var(--font-robotoBold);
+  font-size: 35px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.footer-content > a {
+  font-size: var(--fs-body);
+}
