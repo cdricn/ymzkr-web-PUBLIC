@@ -18,5 +18,7 @@ If you'd like to set up a Github OAuth, you can follow these steps:
 - Append ``/api/auth/callback/github`` for your Authorization Callback URL </br>
 Example: ``https://your_url/api/auth/callback/github``
 
+If done correctly, ``/user`` should be protected and will only be accessible once you connect to Github. </br>
+However, the code that checks if the user is authorized is removed from the repo for security reasons, which means any GitHub account can access the ``/user`` page. 
 
 
