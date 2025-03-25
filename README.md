@@ -4,7 +4,7 @@ This repo is for demonstration purposes only, and some of the database functions
 Visit the website here: https://ymzk.vercel.app/
 
 ## How to Build
-Clone the repo and install any missing dependencies. The middleware protects the USER page from being accessed. If you want it disabled, either go to middlware.ts and 
+Clone the repo and install any missing dependencies. The middleware protects the ``/user`` page from being accessed. If you want it disabled, either go to middlware.ts and 
 replace the value of ``const protectedRoutes = ["/user"];`` with something else, or set up a GitHub OAuth.
 
 ## GitHub OAuth Middleware
