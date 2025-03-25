@@ -1,6 +1,6 @@
 # YMZK Repository
-This is the public repository for the YMZKR website. Uses React + TypeScript and Next.js, and connected to a Serverless Neon Postgre database. 
-This repo is for demonstration purposes only, and some of the database functions were obscured for security reasons. </br></br>
+This is the public repository for the YMZKR website. Uses React + TypeScript and Next.js, and connected to a Serverless Neon Postgre database to dynamically display author works. 
+This repo is for demonstration purposes only, and some of the database/authentication code were obscured for security reasons. </br></br>
 Visit the website here: https://ymzk.vercel.app/
 
 ## How to Build
