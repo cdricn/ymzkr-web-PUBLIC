@@ -6,10 +6,10 @@ import { signIn, signOut } from '../../auth';
 
 
 const FormSchema = z.object({
-  title: z.string(),
-  link: z.string(),
-  date_created: z.string(),
-  date_completed: z.string().nullable()
+  title: z.type,
+  link: z.type,
+  date_created: z.type,
+  date_completed: z.type
 })
 const CreateEntry = FormSchema.omit({});
 

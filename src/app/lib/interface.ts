@@ -15,6 +15,13 @@ export interface LinkBoxProps {
   path: string[]
 }
 
+export interface ConfirmActionProps {
+  isVisible: boolean,
+  title: string | null,
+  onCancel: () => void,
+  onConfirm: () => void
+}
+
 export interface FormData {
   title: string,
   link: string,

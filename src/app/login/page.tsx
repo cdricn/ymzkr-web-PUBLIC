@@ -1,6 +1,7 @@
 'use server'
 import styles from './page.module.css';
 import SignInButton from '../ui/components/signInButton';
+import SignOutButton from '../ui/components/signOutButton';
 import { auth } from '../../auth';
 
 export default async function LoginPage() {

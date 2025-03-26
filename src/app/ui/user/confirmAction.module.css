@@ -1,0 +1,67 @@
+.action-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-dark);
+  z-index: 100;
+}
+
+.action-box {
+  border-radius: 15px;
+  padding: 40px;
+  width: 320px;
+  height: fit-content;
+  background-color: var(--color-ivory);
+  text-align: center;
+}
+
+.label {
+  margin-bottom: 10px;
+  display: block;
+  font-size: var(--fs-categ-header);
+  font-family: var(--font-robotoBold);
+  color: var(--color-lightdovegrey);
+}
+.body {
+  margin-bottom: 10px;
+  display: block;
+  font-size: var(--fs-body);
+  font-family: var(--font-roboto);
+}
+
+.btn-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.btn {
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 90px;
+  cursor: pointer;
+}
+.confirm {
+  background-color: var(--color-blue);
+}
+.decline {
+  background-color: var(--color-red);
+}
+
+.confirm, .decline {
+  transition: .2s;
+  filter: contrast(80%)
+}
+.confirm:hover, .decline:hover {
+  transition: .2s;
+  filter: contrast(140%)
+}

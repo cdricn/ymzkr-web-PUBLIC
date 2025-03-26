@@ -2,6 +2,7 @@
   position: relative;
   overflow-x: auto;
 }
+
 .item-form, .headers-row {
   margin-bottom: 2px;
   padding: 15px 25px 15px 25px;
@@ -9,29 +10,36 @@
   display: flex;
   justify-content: flex-start;
   gap: 40px;
-  height: fit-content;
   width: fit-content;
-  max-width: 1720px;
-  color: var(--color-dark);
   background-color: var(--background-lightgrey);
-  /*scrollbar-color: var(--background-grey) var(--background-lightgrey);
-  scrollbar-width: thin;*/
 }
 
-.item-form > *, .headers-row > * {
+.entry-details, .headers-row {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  height: fit-content;
+  width: fit-content;
+  color: var(--color-dark);
+}
+.entry-details > *, .headers-row > *, .entry-buttons {
   width: 200px;
   min-width: 100px;
 }
 
-.entry-link {
-  word-break: break-all;
+.input-box {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: fit-content;
+  background-color: transparent;
 }
 
-.action-buttons {
+
+.entry-buttons {
   display: flex;
   gap: 15px;
 }
-
 .delete-button, .edit-button, .cancel-button {
   position: relative;
   display: inline-block;

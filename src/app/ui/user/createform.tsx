@@ -8,14 +8,13 @@ export default function CreateForm() {
   const [formValues, setFormValues] = useState({
     title: '',
     link: '',
-    category: '',
     date_created: '',
-    date_completed: ''
+    date_completed: '',
+    categ: ''
   });
   const [action, setAction] = useState('create');
 
-
-  function handleOnChange(target: HTMLInputElement) {
+  function handleOnChange(target: HTMLInputElement | HTMLSelectElement) {
     const { name, value } = target;
     setFormValues((prevValue)=>({...prevValue, [name]: value}))
   }
@@ -43,8 +42,9 @@ export default function CreateForm() {
     }
   }
 
+
   return (
-    <form className={styles['form']} onSubmit={handleSubmit}>
+    <form id='create-form' className={styles['form']} onSubmit={handleSubmit}>
       <div className={styles['form-label-group']}>
         <label className={styles['form-label']}>Title:</label>
         <input
@@ -70,12 +70,17 @@ export default function CreateForm() {
 
       <div className={styles['form-label-group']}>
         <label className={styles['form-label']}>Category:</label>
-        <select id="category" 
-          className={styles['form-input']}>
-            <option disabled={true} value=""> -- select an option -- </option>
-            <option value="book">Book</option>
-            <option value="original">Original</option>
-            <option value="fanfiction">Fanfiction</option>
+        <select 
+          id='categ'
+          name='categ'
+          value={formValues.categ}
+          onChange={(e)=>handleOnChange(e.target)}
+          className={styles['form-input']}
+        >
+          <option disabled={true} value=""> -- select an option -- </option>
+          <option value="Books">Book</option>
+          <option value="Original">Original</option>
+          <option value="Fanfiction">Fanfiction</option>
         </select>
       </div>
 
