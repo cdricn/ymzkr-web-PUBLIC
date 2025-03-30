@@ -1,13 +1,20 @@
 # YMZK Repository
-This is the public repository for the YMZKR website. Uses React + TypeScript and Next.js, and connected to a Serverless Neon Postgre database to dynamically display author works. 
-This repo is for demonstration purposes only, and some of the database/authentication code were obscured for security reasons. </br></br>
+This is the public repository for the YMZKR website, a portfolio website that showcases the works of a writer. </br>
+Uses React + TypeScript and Next.js, and connected to a Serverless Neon Postgre database to dynamically display the author's works. </br>
+**This repo is for demonstration purposes only, and will produce errors when built** since some of the database/authentication code were obscured for security reasons.
+
 Visit the website here: https://ymzk.vercel.app/
 
-## How to Build
-Clone the repo and install any missing dependencies. The middleware protects the ``/user`` page from being accessed. If you want it disabled, either go to middlware.ts and 
-replace the value of ``const protectedRoutes = ["/user"];`` with something else, or set up a GitHub OAuth.
+## Building:
+**Please note that this build is non-functional**. </br>
+Most of the code that deals with the backend is not included and there is no connection to the database, which means sections and pages may not load data or the page itself.
 
-## GitHub OAuth Middleware
+If you really want to build the project, clone the repo and install any missing dependencies and type ``npm run dev`` in the terminal.
+
+## Next.js Middleware
+The middleware protects the ``/user`` page from being accessed. If you want it disabled, either go to middlware.ts and 
+replace the value of ``"/user"`` from ``const protectedRoutes = ["/user"];``, or set up a GitHub OAuth.
+
 If you'd like to set up a Github OAuth, you can follow these steps:
 - Go to your developer settings in Github and setup an OAuth App.
 - Get the value from your ClientID and set it in your project .env AND in Vercel's environment variables. </br>
@@ -19,6 +26,7 @@ If you'd like to set up a Github OAuth, you can follow these steps:
 Example: ``https://your_url/api/auth/callback/github``
 
 If done correctly, ``/user`` should be protected and will only be accessible once you connect to Github. </br>
-However, the code that checks if the user is authorized is removed from the repo for security reasons, which means any GitHub account can access the ``/user`` page. 
+Please note that the code that checks if the account is authorized is not included from the repo, which means any GitHub account can access the ``/user`` page.
 
+Read more on how to configure the GitHub OAuth with Next.js [here](https://next-auth.js.org/providers/github).
 
