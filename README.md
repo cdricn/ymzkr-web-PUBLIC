@@ -9,7 +9,8 @@ Visit the website here: https://ymzk.vercel.app/
 **Please note that this build is non-functional**. </br>
 Most of the code that deals with the backend is not included and there is no connection to the database, which means sections and pages may not load data or the page itself.
 
-If you really want to build the project, clone the repo and install any missing dependencies. Type ``npm run dev`` in the terminal to run.
+If you really want to build the project, clone the repo and install any missing dependencies. Type ``npm run build`` in the terminal to build.
+If you want to just run the project, type ``npm run dev``.
 
 ## Next.js Middleware
 The middleware protects the ``/user`` page from being accessed. If you want it disabled, either go to middlware.ts and 
